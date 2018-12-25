@@ -1,15 +1,7 @@
 ﻿@model Vidly.ViewModels.CustomerFormViewModel
 
 @{
-    if(Model.Customer == null || Model.Customer.Id == 0)
-    {
-        ViewBag.Title = "New Customer";
-    }
-    else
-    {
-        ViewBag.Title = "Edit Customer";
-    }
-
+    ViewBag.Title = Model.Title;
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
